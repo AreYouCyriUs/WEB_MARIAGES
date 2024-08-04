@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vidéaste - Page d'Accueil</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    
+     .hero-section {
+      background: linear-gradient(45deg, rgba(255, 0, 150, 0.8), rgba(0, 204, 255, 0.8)), url('ton-image-de-fond.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+    .testimonial {
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Vidéaste</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">À Propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Galerie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Témoignages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="container">
+      <h1 class="display-4">Bienvenue sur mon site</h1>
+      <p class="lead">Je suis un vidéaste passionné prêt à capturer vos moments précieux.</p>
+      <a href="#contact" class="btn btn-primary btn-lg">Contactez-moi</a>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center">À Propos</h2>
+      <p class="text-center">Je suis un vidéaste avec plus de 10 ans d'expérience dans la capture et la production de vidéos de haute qualité. Que ce soit pour des événements, des mariages, ou des projets commerciaux, je suis ici pour vous aider à raconter votre histoire à travers mes vidéos.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Galerie</h2>
+      <div class="row gallery">
+        <div class="col-md-4 mb-4">
+          <img src="video-thumbnail1.jpg" alt="Vidéo 1" class="img-fluid">
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="video-thumbnail2.jpg" alt="Vidéo 2" class="img-fluid">
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="video-thumbnail3.jpg" alt="Vidéo 3" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Témoignages</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>"Un vidéaste incroyable ! Il a parfaitement capturé notre mariage et nous sommes ravis des vidéos."</p>
+            <footer class="blockquote-footer">Client 1</footer>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>"Professionnel et talentueux, je recommande vivement ses services."</p>
+            <footer class="blockquote-footer">Client 2</footer>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>"Les vidéos sont fantastiques et le montage est parfait. Merci beaucoup !"</p>
+            <footer class="blockquote-footer">Client 3</footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Contact</h2>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="name">Nom</label>
+            <input type="text" class="form-control" id="name" placeholder="Votre nom">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Votre email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Votre message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <p>&copy; 2024 Vidéaste. Tous droits réservés.</p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
